@@ -11,7 +11,6 @@ env.Command(
   ['gen/cpp/car.capnp.c++', 'gen/cpp/log.capnp.c++', 'gen/cpp/ui.capnp.c++', 'gen/cpp/tinkla.capnp.c++', 'gen/cpp/tesla.capnp.c++', 'gen/cpp/car.capnp.h', 'gen/cpp/log.capnp.h', 'gen/cpp/ui.capnp.h', 'gen/cpp/tinkla.capnp.h', 'gen/cpp/tesla.capnp.h'],
   ['car.capnp', 'log.capnp', 'tesla.capnp', 'tinkla.capnp', 'ui.capnp'],
   'capnpc $SOURCES --src-prefix=cereal -o c++:' + gen_dir.path + '/cpp/')
-import shutil
 if shutil.which('capnpc-java'):
   env.Command(
     ['gen/java/Car.java', 'gen/java/Log.java', 'gen/java/Tesla.java', 'gen/java/Tinkla.java', 'gen/java/Ui.java'],
