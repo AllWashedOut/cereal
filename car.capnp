@@ -103,6 +103,17 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     neosUpdateRequired @88;
     modeldLagging @89;
     deviceFalling @90;
+
+    dataNeededDEPRECATED @16;
+    modelCommIssueDEPRECATED @27;
+    ipasOverrideDEPRECATED @33;
+    geofenceDEPRECATED @40;
+    driverMonitorOnDEPRECATED @41;
+    driverMonitorOffDEPRECATED @42;
+    calibrationProgressDEPRECATED @47;
+    invalidGiraffeHondaDEPRECATED @49;
+    canErrorPersistentDEPRECATED @83;
+    startupWhitePandaDEPRECATED @82;
   }
 }
 
